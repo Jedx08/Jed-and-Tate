@@ -4,13 +4,22 @@ const navBar = `<div>
     <h2 class="logo"><img src="./image/icon.png" class="logo-image"></h2>
   </a>
   <nav class="navigation">
-    <a href="./../index.html">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contacts</a>
+   <ul>
+    <li><a href="./../index.html">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contacts</a></li>
+    <li>
     <a href="./../checkout.html">
       <img href="./../checkout.html" src="./../image/cart.png" title="Cart" class="cart-image">
     </a>
+    </li>
+   </ul>
+    
+    
+    
+    
+    
   </nav>
 
   <div class="burger-btn">
