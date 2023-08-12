@@ -1,11 +1,16 @@
 const navBar = `<div>
 <header>
-  <h2 class="logo"><img src="./image/icon.png" class="logo-image"></h2>
+  <a href="./../index.html">
+    <h2 class="logo"><img src="./image/icon.png" class="logo-image"></h2>
+  </a>
   <nav class="navigation">
-    <a href="#">Home</a>
+    <a href="./../index.html">Home</a>
     <a href="#">About</a>
     <a href="#">Services</a>
     <a href="#">Contacts</a>
+    <a href="./../checkout.html">
+      <img href="./../checkout.html" src="./../image/cart.png" title="Cart" class="cart-image">
+    </a>
   </nav>
 
   <div class="burger-btn">
@@ -24,7 +29,7 @@ const navBar = `<div>
         </div>
         
         <div class="offcanvas-body offcanvas-items">
-          <a href="#">Home</a>
+          <a href="./../index.html">Home</a>
           <a href="#">About</a>
           <a href="#">Services</a>
           <a href="#">Contacts</a>
@@ -41,5 +46,5 @@ document.querySelector('.js-nav').innerHTML = navBar;
 
 window.addEventListener('scroll', () => {
   const header = document.querySelector('header');
-  header.classList.toggle('sticky', window.scrollY > 50);
+  header.classList.toggle('sticky', window.scrollY > 30);
 })

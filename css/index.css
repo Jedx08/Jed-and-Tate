@@ -44,6 +44,7 @@ header.sticky {
   font-family: 'Poppins', sans-serif;
   color: #5b7c99;
   text-decoration: none;
+  border: 1px solid red;
 }
 
 .btnlogin-popup {
@@ -68,12 +69,9 @@ body {
   justify-content: center;
 }
 
-
-
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  
   max-width: max-content;
   margin-left: auto;
   margin-right: auto;
@@ -98,17 +96,16 @@ body {
 .product-container {
   background-color: white;
   padding: 5px;
-
   margin: 5px;
   max-width: 550px;
   box-shadow: 0 0 10px lightblue;
 }
 
 
-/* .image-container {
-  height: 180px;
-  margin-bottom: 20px;
-} */
+.cart-image {
+  height: 80px;
+  width: 80px;
+}
 
 .product-image {
   max-width: 100%;
