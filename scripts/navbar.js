@@ -10,16 +10,18 @@ const navBar = `<div>
     <li><a href="#">Services</a></li>
     <li><a href="#">Contacts</a></li>
     <li>
-    <a href="./../checkout.html">
-      <img href="./../checkout.html" src="./../image/cart.png" title="Cart" class="cart-image">
-    </a>
+      <a href="./../checkout.html">
+        <div class="cart-container">
+          <div class="cart-icon">
+            <img href="./../checkout.html" src="./../image/cart.png" title="Cart" class="cart-image">
+          </div>
+          <div class="cart-quantity">
+            3
+          </div>
+        </div>
+      </a>
     </li>
    </ul>
-    
-    
-    
-    
-    
   </nav>
 
   <div class="burger-btn">
