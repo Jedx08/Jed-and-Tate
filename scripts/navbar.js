@@ -13,12 +13,14 @@ const navBar = `<div>
       <a href="./../checkout.html">
         <div class="cart-container">
           <div class="cart-icon">
-            <img href="./../checkout.html" src="./../image/cart.png" title="Cart" class="cart-image">
+            <span class="material-icons-outlined cart-icon-outlined">
+              shopping_cart
+            </span>
           </div>
-          <div class="cart-quantity">
-            3
+          <div class="cart-quantity js-quantity">
+            
           </div>
-        </div>
+        </div> 
       </a>
     </li>
    </ul>

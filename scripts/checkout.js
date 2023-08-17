@@ -1,5 +1,8 @@
-// import { products } from "../data/products.js";
-// import { cart } from "./../data/cart.js";
+import { products } from "./../data/products.js";
+import { cart } from "./../data/cart.js";
+import { updateCart } from "./update-cart.js";
+
+updateCart();
 
 let cartSummaryHTML = '';
 
@@ -32,7 +35,7 @@ cart.forEach((cartItem) => {
           <div>
             <div>${productFound.name}</div>
             <div>₱${productFound.price}</div>
-            <div>20</div>
+            <div>1</div>
           </div>
         </div>
       </div>
