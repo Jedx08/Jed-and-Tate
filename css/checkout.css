@@ -64,7 +64,11 @@
   grid-auto-rows: var(--row-height);
   position: relative;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #ff4f76;
+}
+
+.grid-products div {
+  color: #fff;
 }
 
 .grid-products-span1 {

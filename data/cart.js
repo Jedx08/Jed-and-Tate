@@ -1,9 +1,14 @@
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
+export let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
   // if (!cart) {
-  //   cart = [];
+  //   cart = [
+  //     {
+  //       productId: '00',
+  //       quantity: 0
+  //     }
+  //   ];
   // }
 
-function saveToStorage() {
+export function saveToStorage() {
   localStorage.setItem('cart', JSON.stringify(cart));
 }

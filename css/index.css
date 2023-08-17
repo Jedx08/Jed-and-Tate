@@ -9,6 +9,7 @@
 }
 
 header {
+  background-color: #ff4f76 ;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,7 +17,6 @@ header {
   height: 100px;
   padding: 10px 100px;
   padding-top: 15px;
-  background: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,9 +28,23 @@ header:hover {
   background-color: #fff  ;
 }
 
+header:hover ul li a {
+  color: #ff4f76;
+  transition: .5s;
+}
+
 header.sticky {
   background-color: #fff;
   transition: .5s;
+}
+
+header.sticky ul li a {
+  color: #ff4f76;
+  transition: .5s;
+}
+
+.cart-icon-outlined {
+  font-size: 45px;
 }
 
 .logo {
@@ -61,7 +75,7 @@ header.sticky {
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  color: #5b7c99;
+  color: #fff;
   font-size: 15px;
 }
 
@@ -78,13 +92,19 @@ header.sticky {
 }
 
 body {
-  background-color: #cfe8ef;
+  background-color: #fff;
 }
 
 .main {
   margin-top: 100px;
   align-items: center;
   justify-content: center;
+}
+
+.home-page-ads {
+  width: 100%;
+  height: 80vh;
+  background-color: #ff4f76;
 }
 
 .grid {
@@ -116,7 +136,7 @@ body {
   padding: 5px;
   margin: 5px;
   max-width: 550px;
-  box-shadow: 0 0 10px lightblue;
+  box-shadow: 0 0 10px #c3c3c3;
 }
 
 
@@ -143,6 +163,14 @@ body {
 .price-icons {
   display: flex;
   justify-content: space-between;
+}
+
+.add-to-cart-icon {
+  font-size: 35px;
+}
+
+.add-to-cart-icon:hover {
+  color: #ff4f76;
 }
 
 @media (max-width: 592px) {
@@ -280,9 +308,9 @@ body {
 
 .cart-quantity {
   position: absolute;
-  top: 18%;
-  left: 48%;
   font-size: 14px;
+  top: -2px;
+  left: 14px;
   color: #fff;
   background-color: rgb(20, 116, 234);
   padding-left: 5px;
