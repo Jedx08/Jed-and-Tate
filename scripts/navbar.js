@@ -10,7 +10,7 @@ const navBar = `<div>
     <li><a href="#">Services</a></li>
     <li><a href="#">Contacts</a></li>
     <li>
-      <a href="./../checkout.html">
+      <a href="../checkout.html">
         <div class="cart-container">
           <div class="cart-icon">
             <span class="material-icons-outlined cart-icon-outlined">

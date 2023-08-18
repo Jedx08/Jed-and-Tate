@@ -20,7 +20,7 @@ products.forEach((product) => {
           ${product.price}
         </div>
 
-        <button class="add-to-cart-button js-add-to-cart" title="add to cart" data-product-id="${product.id}">
+        <button class="add-to-cart-button js-add-to-cart" title="add to cart" data-product-id="${product.productId}">
           <span class="material-icons-outlined add-to-cart-icon">
             add_shopping_cart
           </span>  

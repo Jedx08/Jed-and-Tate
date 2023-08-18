@@ -97,6 +97,10 @@
   justify-content: space-around;
 }
 
+.product-delete {
+  cursor: pointer;
+}
+
 @media (max-width: 907px) {
   .grid-checkout {
     display: flex;
