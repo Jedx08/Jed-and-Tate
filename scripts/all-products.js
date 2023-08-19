@@ -1,5 +1,5 @@
 import { products } from "../data/products.js";
-import { cart, saveToStorage } from "../data/cart.js";
+import { cart, saveToStorage, matchItem } from "../data/cart.js";
 import { updateCart } from "./update-cart.js";
 
 let productsHTML = '';
@@ -38,11 +38,7 @@ document.querySelectorAll('.js-add-to-cart')
   .forEach((button) => {
     button.addEventListener('click', () => {
       const productId = button.dataset.productId;
-      cart.push({
-        productId: productId,
-        quantity: 1
-      });
-
+      matchItem(productId);
       saveToStorage();
       updateCart();
   });
