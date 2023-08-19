@@ -1,4 +1,5 @@
 import { updateCart } from "../scripts/update-cart.js";
+import { products } from "./products.js";
 
 export let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
@@ -30,6 +31,13 @@ export function removeFromCart(productId) {
 
 export function matchItem(productId) {
   let matchItem;
+  let productPrice;
+
+  products.forEach((product) => {
+    if (productId === product.productId) {
+      productPrice = product.price;
+    }
+  });
 
   cart.forEach((cartItem) => {
     if (productId === cartItem.productId) {
@@ -42,6 +50,7 @@ export function matchItem(productId) {
   } else {
     cart.push({
       productId: productId,
+      price: productPrice,
       quantity: 1
     });
   }
