@@ -41,7 +41,5 @@ document.querySelectorAll('.js-add-to-cart')
       matchItem(productId);
       saveToStorage();
       updateCart();
-
-      console.log(cart);
   });
 });

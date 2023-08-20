@@ -101,6 +101,26 @@
   cursor: pointer;
 }
 
+.input-quantity-off {
+  display: none;
+}
+
+.input-quantity-on {
+  display: initial;
+  width: 40px;
+  text-align: center;
+}
+
+.input-quantity-on::-webkit-outer-spin-button,
+.input-quantity-on::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.update-product {
+  cursor: pointer;
+}
+
 @media (max-width: 907px) {
   .grid-checkout {
     display: flex;
