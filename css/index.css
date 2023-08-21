@@ -9,22 +9,91 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #eaecec;
 }
 
 .main {
-  margin-top: 100px;
   align-items: center;
   justify-content: center;
 }
 
 .home-page-ads {
+  position: relative;
   width: 100%;
-  height: 80vh;
+  max-height: max-content;
   background-color: #ff4f76;
 }
 
+.ads-image {
+  width: 100%;
+  max-height: 90vh;
+}
+
+@media (max-width: 1560px) {
+  .ads-image {
+    width: 100%;
+    max-height: 80vh;
+  }
+}
+
+@media (max-width: 1050px) {
+  .ads-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.ads-text {
+  background-color: transparent;
+  position: absolute;
+  top: 300px;
+  left: 200px;
+  color: #fff;
+  font-size: 100px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+@media (max-width: 1500px) {
+  .ads-text {
+    top: 250px;
+    left: 150px;
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 1310px) {
+  .ads-text {
+    top: 200px;
+    left: 100px;
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 975px) {
+  .ads-text {
+    top: 150px;
+    left: 100px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 720px) {
+  .ads-text {
+    top: 100px;
+    left: 80px;
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 610px) {
+  .ads-text {
+    display: none;
+  }
+}
+
 .grid {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   max-width: max-content;
@@ -49,6 +118,7 @@ body {
 
 
 .product-container {
+  position: relative;
   background-color: white;
   padding: 5px;
   margin: 5px;
@@ -124,62 +194,3 @@ body {
   }
 }
 
-.footer-container {
-  padding-top: 20px;
-}
-
-.footer-icons {
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
-}
-
-.footer-icons a {
-  margin: 20px;
-  text-decoration: none;
-  color: black;
-}
-
-.footer-nav {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-nav a {
-  text-decoration: none;
-  color: black;
-  margin: 20px;
-}
-
-.footer-bottom {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-@media (max-width: 500px) {
-  .footer-container {
-    font-size: 10px;
-  }
-
-  .footer-icons {
-    font-size: 20px;
-  }
-}
-
-.cart-container  {
-  position: relative;
-}
-
-.cart-quantity {
-  position: absolute;
-  font-size: 14px;
-  top: -2px;
-  left: 14px;
-  color: #fff;
-  background-color: rgb(20, 116, 234);
-  padding-left: 5px;
-  padding-right: 5px;
-  border-radius: 24px;
-}
