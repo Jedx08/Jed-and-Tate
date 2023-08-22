@@ -29,19 +29,23 @@ cart.forEach((cartItem) => {
       <div class="grid-products-span2">
         <div class="flex-products-info">
           <div>
-            <div>Name:</div>
-            <div>Price:</div>
-            <div>Quantity:</div>
+            <div class="product-info-span1">Name:</div>
+            <div class="product-info-span1">Price:</div>
+            <div class="product-info-span1">Quantity:</div>
             <div></div>
           </div>
           <div>
-            <div>${productFound.name}</div>
-            <div>₱${productFound.price}</div>
-            <div class="js-cart-quantity-${productFound.productId}">${cartItem.quantity}</div>
-            <div>
-              <input type="number" class="input-quantity-off js-input-quantity-${productFound.productId}" id="pquantity">
-              <span class="update-product js-update-quantity js-quantity-${productFound.productId}" data-product-id="${productFound.productId}">Update</span>
-              <span class="product-delete js-delete-span" data-product-id="${productFound.productId}">Delete</span>
+            <div class="product-info-span1">${productFound.name}</div>
+            <div class="product-info-span1">₱${productFound.price}</div>
+            <div class="cart-quantity-container">
+              <div class="js-cart-quantity-${productFound.productId}">
+              ${cartItem.quantity}
+              </div>
+              <div class="quantity-edit-container">
+                <input type="number" class="input-quantity-off js-input-quantity-${productFound.productId}" id="pquantity">
+                <span class="update-product js-update-quantity js-quantity-${productFound.productId}" data-product-id="${productFound.productId}">Update</span>
+                <span class="product-delete js-delete-span" data-product-id="${productFound.productId}">Delete</span>
+              </div>
             </div>
           </div>
         </div>
@@ -112,6 +116,5 @@ updateQuantity.forEach((button) => {
         newQuantity();
       }
     })
-    
   })
 });

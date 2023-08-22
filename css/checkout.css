@@ -68,17 +68,20 @@
   position: relative;
   align-items: center;
   background-color: #ffffff;
+  box-shadow: 0 0 10px #c3c3c3;
 }
 
 .place-order {
   width: 100%;
   padding: 20px;
+  margin-top: 10px;
   border: 1px;
   border-radius: 13px;
   background-color: rgb(255, 183, 0);
 }
 
 .place-order:hover {
+  color: #ffffff;
   background-color: #ff4f76;
   transition: 0.5s;
 }
@@ -126,8 +129,39 @@
   justify-content: space-around;
 }
 
+.product-info-span1 {
+  margin-bottom: 15px;
+}
+
+.cart-quantity-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  /* margin-left: 8px; */
+}
+
+.quantity-edit-container {
+  margin-left: 8px;
+}
+
 .product-delete {
+  margin-left: 8px; 
   cursor: pointer;
+  color: #ff4f76;
+}
+
+.product-delete:hover {
+  color: red;
+}
+
+.update-product {
+  cursor: pointer;
+  color: green;
+}
+
+.update-product:hover {
+  color: rgb(255, 183, 0);
 }
 
 .input-quantity-off {
@@ -146,11 +180,7 @@
   margin: 0;
 }
 
-.update-product {
-  cursor: pointer;
-}
-
-@media (max-width: 907px) {
+@media (max-width: 971px) {
   .grid-checkout {
     display: flex;
     flex-direction: column;
@@ -163,25 +193,46 @@
   }
 }
 
-@media (max-width: 569px) {
+@media (max-width: 581px) {
   .grid-products-span1 img {
     max-width: 250px;
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 526px) {
   .grid-products-span1 img {
     max-width: 200px;
-  }
-}
-
-@media (max-width: 389px) {
-  .grid-products-span1 img {
-    max-width: 150px;
   }
 
   .flex-products-info {
     font-size: 13px;
+  }
+
+  .cart-quantity-container {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 432px) {
+  .grid-products-span1 img {
+    max-width: 150px;
+  }
+
+  .product-info-span1 {
+    margin-bottom: 10px;
+  }
+
+  .flex-products-info {
+    font-size: 10px;
+  }
+
+  .cart-quantity-container {
+    font-size: 10px;
+    margin-left: auto;
+  }
+
+  .product-delete {
+    margin-left: auto;
   }
 }
 
@@ -192,5 +243,11 @@
 
   .flex-products-info {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 290px) {
+  .checkout-page {
+    font-size: 35px;
   }
 }
