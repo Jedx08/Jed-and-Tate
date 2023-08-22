@@ -19,7 +19,7 @@
   grid-auto-rows: var(--row-height);
   gap: var(--gap);
   position: relative;
-  margin-top: 110px;
+  margin-top: 10px;
 }
 
 .grid-checkout-span1 {
@@ -48,6 +48,9 @@
 
 .order-summary {
   text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 
 .grid-cart-products {
@@ -67,8 +70,34 @@
   background-color: #ffffff;
 }
 
-.grid-products div {
-  /* color: #fff; */
+.place-order {
+  width: 100%;
+  padding: 20px;
+  border: 1px;
+  border-radius: 13px;
+  background-color: rgb(255, 183, 0);
+}
+
+.place-order:hover {
+  background-color: #ff4f76;
+  transition: 0.5s;
+}
+
+.checkout-banner {
+  height: 20vh;
+  background-image:  linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../image/home-page-ad-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.checkout-page {
+  text-align: center;
+  position: relative;
+  top: 60%;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .grid-products-span1 {
