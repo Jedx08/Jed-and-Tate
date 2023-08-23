@@ -21,7 +21,7 @@ body {
   position: relative;
   width: 100%;
   max-height: max-content;
-  background-color: #ff4f76;
+  background-color: transparent;
 }
 
 .ads-image {
