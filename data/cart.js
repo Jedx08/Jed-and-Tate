@@ -55,3 +55,13 @@ export function matchItem(productId) {
     });
   }
 }
+
+export function addedCart(productId) {
+  document.querySelector(`.product-added-${productId}`).innerHTML = 'added!';
+
+  function clearText() {
+    document.querySelector(`.product-added-${productId}`).innerHTML = '';
+  }
+
+  setTimeout(clearText, 1000);
+}

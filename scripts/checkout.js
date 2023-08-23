@@ -1,8 +1,10 @@
 import { products } from "./../data/products.js";
 import { cart, removeFromCart, saveToStorage } from "./../data/cart.js";
 import { updateCart } from "./update-cart.js";
+import { orderSummary } from "./order-summary.js";
 
 updateCart();
+orderSummary();
 
 let cartSummaryHTML = '';
 
@@ -79,7 +81,7 @@ updateQuantity.forEach((button) => {
     let updateCartQuantity;
 
     cart.forEach((cartItem) => {
-      if ( cartItem.productId === productId) {
+      if ( cartItem.productId === productId ) {
         updateCartQuantity = cartItem;
       }
     });
@@ -98,6 +100,7 @@ updateQuantity.forEach((button) => {
       
       saveToStorage();
       updateCart();
+      orderSummary();
     }
     
     if ( quantity.innerHTML === "Update") {
@@ -115,6 +118,6 @@ updateQuantity.forEach((button) => {
         inputQuantity.classList.remove('input-quantity-on');
         newQuantity();
       }
-    })
-  })
+    });
+  });
 });

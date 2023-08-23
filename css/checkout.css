@@ -180,6 +180,20 @@
   margin: 0;
 }
 
+.cart-empty {
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+  position: relative;
+  margin-top: 60px;
+}
+
+.quantity-count {
+  color: blue;
+  font-size: 17px;
+  font-weight: 600;
+}
+
 @media (max-width: 971px) {
   .grid-checkout {
     display: flex;

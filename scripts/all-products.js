@@ -1,5 +1,5 @@
 import { products } from "../data/products.js";
-import { cart, saveToStorage, matchItem } from "../data/cart.js";
+import { saveToStorage, matchItem, addedCart } from "../data/cart.js";
 import { updateCart } from "./update-cart.js";
 
 let productsHTML = '';
@@ -13,6 +13,7 @@ products.forEach((product) => {
 
       <div class="product-name">
         ${product.name}
+        <span class="product-added product-added-${product.productId}"></span>
       </div>
 
       <div class="price-icons">
@@ -38,6 +39,7 @@ document.querySelectorAll('.js-add-to-cart')
   .forEach((button) => {
     button.addEventListener('click', () => {
       const productId = button.dataset.productId;
+      addedCart(productId);
       matchItem(productId);
       saveToStorage();
       updateCart();

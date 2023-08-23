@@ -29,6 +29,11 @@ body {
   max-height: 90vh;
 }
 
+.product-added {
+  color: rgb(2, 194, 2);
+  font-weight: 100;
+}
+
 @media (max-width: 1560px) {
   .ads-image {
     width: 100%;
@@ -138,6 +143,8 @@ body {
 }
 
 .product-name {
+  display: flex;
+  justify-content: space-between;
   padding: 10px;
   font-weight: bold;
 }
